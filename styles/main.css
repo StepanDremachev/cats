@@ -8,7 +8,6 @@ body {
 	color: #1A212F;
 	background: #FFFEFD;
 }
-
 header {
 	display: flex;
 	justify-content: space-between;
@@ -68,6 +67,7 @@ nav li a{
 	height: 50px;
 	display: flex;
 	justify-content: space-between;
+	cursor: pointer;
 }
 .button-reserve1 a {
 	font-weight: 600;
@@ -92,6 +92,7 @@ nav li a{
 	height: 50px;
 	display: flex;
 	justify-content: space-between;
+	cursor: pointer;
 }
 .button-reserve2 a {
 	font-weight: 600;
@@ -149,7 +150,6 @@ nav li a{
 .rooms figure img{
 	border-radius: 10px;
 }
-
 .rooms figcaption h4{
 	font-family: Rubik, Arial, sans-serif;
 	font-weight: 500;
@@ -157,7 +157,6 @@ nav li a{
 	line-height: 26px;
 	margin-bottom: 30px;
 }
-
 .rooms figcaption li{
 	font-size: 16px;
 	line-height: 19px;
@@ -165,13 +164,11 @@ nav li a{
 	padding-left: 17px;
 	margin-bottom: 20px;
 }
-
 .rooms figcaption ul{
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
-
 .rooms figcaption{
 	background: #FFFFFF;
 	box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
@@ -185,7 +182,6 @@ nav li a{
 	top: 10%;
 	bottom: 10%;
 }
-
 .rooms figure{
 	position: relative;
 	max-width: 1030px;
@@ -193,13 +189,11 @@ nav li a{
 	margin: 0 auto;
 	height: 404px;
 }
-
 .owl-carousel .owl-item img {
     display: block;  
 	max-width: 600px;
 	width: auto;
 }
-
 .owl-theme .owl-dots .owl-dot span{
 	background: #E1E1E1;
 	margin: 10px;
@@ -208,7 +202,6 @@ nav li a{
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     background: #FAC663;
 }
-
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
     background: 0 0;
     color: FF7236;
@@ -221,7 +214,6 @@ nav li a{
 	border-radius: 50%;
 	font-size: 23px;
 }
-
 .owl-theme .owl-nav {        
 	margin-top: 10px;
 	text-align: right;
@@ -229,13 +221,11 @@ nav li a{
 	margin-right: auto;
 	margin-left: auto;
 }
-
 .feedback p{
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 140%;
 }
-
 .feedback p::before{
 	content: '“';
 	font-weight: 500;
@@ -246,13 +236,11 @@ nav li a{
 	display: inline-block;
 	
 }
-
 .feedback span{
 	font-size: 16px;
 	line-height: 140%;
 	color:#343434;
 }
-
 .feedback{
 	background: #FFFFFF;
 	box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
@@ -260,12 +248,10 @@ nav li a{
 	width: 80%;
 	padding: 35px 38px 35px 70px;
 }
-
 .details{
 	display: flex;
 	justify-content: space-between;
 }
-
 .contacts h3{	
 	font-weight: bold;
 	font-size: 36px;
@@ -277,19 +263,16 @@ nav li a{
 	font-size: 16px;
 	line-height: 19px;
 }
-
 .contacts p{
 	font-size: 16px;
 	line-height: 19px;
 	margin: 0;
 }
-
 .contacts {
 	background:#FAC663;
 	padding: 70px 0 70px 198px;
 	width: 30%;
 }
-
 .social a{
 	text-decoration: none;
 	margin-right: 20px;
@@ -298,33 +281,101 @@ nav li a{
 	width: 70%;
 	height: auto;
 }
-
 .info{
 	display: flex;
 }
-
 .footer_nav{
 	display: flex;
 	justify-content: space-between;
 }
-
 .footer_nav nav{
 	margin-right: 103px;
 }
-
 .footer_nav .logo{
 	margin-left: 97px;
 }
-
 .copyright {
-	border-top: ipx solid #EFEFEF;
+	border-top: 1px solid #EFEFEF;
 	display: flex;
 	justify-content: space-between;
 	padding: 20px 198px;
 }
-
 .copyright span{
 	font-size: 12px;
 	line-height: 54px;
 	color: #8f8f8f
+}
+
+/*форма бронирования*/
+.pop-up{
+	position: absolute;
+	top: 146px;
+	margin-left: 50%;
+	display: none;
+	z-index: 15;
+}
+.pop-up_content{	
+	width: 570px;
+	background: url(../images/paw_forma.png) no-repeat left -20px top -20px #FFFEFD;
+	box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+	border-radius: 10px;
+	padding: 70px;
+	position: relative;
+	margin-left: -50%;
+}
+.pop-up input{
+	border: 1px solid #D7D7D7;
+	border-radius: 25px;
+
+}
+.pop-up .button-reserve2{
+	width: 230px;
+	margin: 50px auto 70px auto;
+}
+.close-button{
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	cursor: pointer;
+}
+.row{
+	margin-bottom: 20px;
+	position: relative;
+}
+.row input{
+	padding: 15px 10px 15px 30px;
+	width: 430px;
+}
+.date input{
+	padding: 15px 5px 15px 20px;
+	width: 129px;
+}
+.row label{
+	display: inline-block;
+	padding: 15px 5px 15px 30px;
+	position: absolute;
+	font-size: 16px;
+}
+.pop-up h3{
+	font-family: Rubik, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+.date{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+label[for="from"]{
+	margin-left: 15px;
+}
+
+.white{
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(255, 255, 255, .5);
+	position: fixed;
+	z-index: 10;
+	display: none;
 }

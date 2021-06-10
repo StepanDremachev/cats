@@ -5,10 +5,7 @@ header nav{
 header .logo{
     /*display: none;*/
     padding-left: 15px;
-}
-header{
-    /*height: 62px;*/               
-}
+} 
 header nav ul{
     display: none;
     position: absolute;
@@ -154,6 +151,10 @@ banner h2{
 .rooms figcaption li{
     font-size: 15px;
     margin-bottom: 17px;
+}
+.rooms .button-reserve2 img{
+    width: 36px;
+    height: 36px;
 }
 .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
     display: none;
